@@ -28,7 +28,7 @@ $app['router'] = $router;
 $router = new AltoRouter();
 $baseUrl = "";
 $router->setBasePath($baseUrl);
-include __DIR__.'/../../router.php';	
+include __DIR__.'/../../config/router.php';	
 $match = $router->match();
 $r = $match['target']; 
 if(is_array($r)){ 
